@@ -60,3 +60,8 @@ In this lesson, we're going to move away from our application being plain HTML a
 <p><a target="_blank" href="https://reactjs.org/docs/react-component.html#forceupdate">Calling <code>forceUpdate()</code> will cause <code>render()</code> to be called on the component, skipping <code>shouldComponentUpdate()</code>. This will trigger the normal lifecycle methods for child components, including the <code>shouldComponentUpdate()</code> method of each child. React will still only update the DOM if the markup changes.</a></p>
 </blockquote>
 
+<div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h4 id="lesson-challenge">Lesson Challenge</h4>
+<p>Read these articles: <a target="_blank" href="https://medium.com/netscape/component-state-vs-redux-store-1eb0c929277">Component State vs Redux Store</a> and <a target="_blank" href="https://medium.com/prod-io/react-redux-architecture-part-1-separation-of-concerns-812da3b08b46">React + Redux Architecture : Separation of Concerns</a>. Answer the following questions : </p>
+<p>1) Explain how React interplays with Redux.</p>
+<p>2) Give an example that illustrates the Separation of Concerns Principle. </p>
+</div></div>
