@@ -45,3 +45,18 @@ In this lesson, we're going to move away from our application being plain HTML a
 <p><a target="_blank" href="https://reactjs.org/docs/refs-and-the-dom.html#callback-refs">React will call the ref callback with the DOM element when the component mounts, and call it with <code>null</code> when it unmounts. Refs are guaranteed to be up-to-date before <code>componentDidMount</code> or <code>componentDidUpdate</code> fires.</a></p>
 </blockquote>
 </div></div>
+
+<h4 id="componentdidmount-"><code>componentDidMount()</code></h4>
+<blockquote>
+<p><a target="_blank" href="https://reactjs.org/docs/react-component.html#componentdidmount"><code>componentDidMount()</code> is invoked immediately after a component is mounted (inserted into the tree)...If you need to load data from a remote endpoint, this is a good place to instantiate the network request.</a></p>
+</blockquote>
+
+<h4 id="forceupdate-"><code>forceUpdate()</code></h4>
+<blockquote>
+<p><a target="_blank" href="https://reactjs.org/docs/react-component.html#forceupdate">By default, when your component’s state or props change, your component will re-render. If your <code>render()</code> method depends on some other data, you can tell React that the component needs re-rendering by calling <code>forceUpdate()</code>.</a></p>
+</blockquote>
+
+<blockquote>
+<p><a target="_blank" href="https://reactjs.org/docs/react-component.html#forceupdate">Calling <code>forceUpdate()</code> will cause <code>render()</code> to be called on the component, skipping <code>shouldComponentUpdate()</code>. This will trigger the normal lifecycle methods for child components, including the <code>shouldComponentUpdate()</code> method of each child. React will still only update the DOM if the markup changes.</a></p>
+</blockquote>
+
