@@ -25,10 +25,8 @@ In this lesson, we're going to move away from our application being plain HTML a
     e.preventDefault();
     alert(<span class="hljs-keyword">this</span>.colorElement.value);
   };
-
   render() {
-    <span class="hljs-keyword">
-  return</span> (
+    <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span>
           <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span>
