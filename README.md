@@ -61,5 +61,12 @@ In this lesson, we're going to move away from our application being plain HTML a
 <div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h4 id="lesson-challenge">Lesson Challenge</h4>
 <p>Read these articles: <a target="_blank" href="https://medium.com/netscape/component-state-vs-redux-store-1eb0c929277">Component State vs Redux Store</a> and <a target="_blank" href="https://medium.com/prod-io/react-redux-architecture-part-1-separation-of-concerns-812da3b08b46">React + Redux Architecture : Separation of Concerns</a>. Answer the following questions : </p>
 <p>1) Explain how React interplays with Redux.</p>
+-If a component holds state and manipulates it, it’s a smart component and if a component just displays data which it receives in the form of props, then it get’s classified as a presentational component.
+-When ever state needs to be shared by multiple components or multiple pages and we need to persist some data over route changes, all that data should go inside the redux store.
+ let’s say all those products have a buy now button and we have a cart which should keep all those items for which the buy now button has been clicked.This cart information needs to be persisted on a lot of pages and across components like the header component where in we will show the cart count, the checkout page and the payment page.This is a clear indication that the products added in the cart should go inside the redux store rather than the component state.This brings us to another distinction between components:-
+Any component which is connected with the redux store is classified as a Container component.It can dispatch actions and update the redux store via the reducers.The components which aren’t connected to the redux store go inside the components folder.Now these components can also further be classified as Smart and Dumb because even though they are not connected to the redux store, they still can hold state by calling some API and persisting that data only till the lifetime of that component.  
 <p>2) Give an example that illustrates the Separation of Concerns Principle. </p>
+Separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern.
 </div></div>
+
+
