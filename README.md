@@ -67,6 +67,26 @@ In this lesson, we're going to move away from our application being plain HTML a
 Any component which is connected with the redux store is classified as a Container component.It can dispatch actions and update the redux store via the reducers.The components which aren’t connected to the redux store go inside the components folder.Now these components can also further be classified as Smart and Dumb because even though they are not connected to the redux store, they still can hold state by calling some API and persisting that data only till the lifetime of that component.  
 <p>2) Give an example that illustrates the Separation of Concerns Principle. </p>
 Separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern.
+1) React/Representation part
+What it should do
+Render HTML content with the data provided.
+Have multiple UI states depending on the data, so that you understand why it is shown.
+Dispatch actions on user interaction or life cycle events (conditional)
+Animation using ReactCSSTransitionGroup or any other libraries.
+What it shouldn’t do
+React is a representation library. It should give a view of the data provided to it and nothing more than that.
+2)Redux part
+  It has 3 parts: Actions, Reducers, and Store. I have put the concerns into 2 groups:
+
+Brain — This will use only the Actions part of Redux
+Storage — This will use Reducers and Store
+1. Brain
+So, the application data is maintained in redux store and representation in React. Everything else which will be a part of your application will come in the “brain”. It will decide how your application functions and what representation to be shown.
+This will contain reducers (pure functions) and a single object called store which will save your application state
+The only way to change its state is by dispatching an action. It’ll update depending upon the action type and the data passed with the action
+The Store will trigger events when its state is updated.
+The view can subscribe to those events and update itself accordingly.
+  
 </div></div>
 
 
