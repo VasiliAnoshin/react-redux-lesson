@@ -67,7 +67,7 @@ In this lesson, we're going to move away from our application being plain HTML a
 Any component which is connected with the redux store is classified as a Container component.It can dispatch actions and update the redux store via the reducers.The components which aren’t connected to the redux store go inside the components folder.Now these components can also further be classified as Smart and Dumb because even though they are not connected to the redux store, they still can hold state by calling some API and persisting that data only till the lifetime of that component.  
 <p>2) Give an example that illustrates the Separation of Concerns Principle. </p>
 Separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern.
-1) React/Representation part
+<h5>1) React/Representation part</h5>
 What it should do
 Render HTML content with the data provided.
 Have multiple UI states depending on the data, so that you understand why it is shown.
@@ -75,7 +75,7 @@ Dispatch actions on user interaction or life cycle events (conditional)
 Animation using ReactCSSTransitionGroup or any other libraries.
 What it shouldn’t do
 React is a representation library. It should give a view of the data provided to it and nothing more than that.
-2)Redux part
+<h5>2)Redux part</h5>
   It has 3 parts: Actions, Reducers, and Store. I have put the concerns into 2 groups:
 
 Brain — This will use only the Actions part of Redux
