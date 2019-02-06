@@ -82,10 +82,12 @@ Brain — This will use only the Actions part of Redux
 Storage — This will use Reducers and Store
 1. Brain
 So, the application data is maintained in redux store and representation in React. Everything else which will be a part of your application will come in the “brain”. It will decide how your application functions and what representation to be shown.
+2. Storage
 This will contain reducers (pure functions) and a single object called store which will save your application state
 The only way to change its state is by dispatching an action. It’ll update depending upon the action type and the data passed with the action
 The Store will trigger events when its state is updated.
 The view can subscribe to those events and update itself accordingly.
+
   
 </div></div>
 
